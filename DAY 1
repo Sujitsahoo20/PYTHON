@@ -1,6 +1,7 @@
 DAY 1 
+--------------------------------------------------------------------------------------------------------------------------
 
-PROBLEM: The provided code stub reads and integer, n, from STDIN. For all non-negative integers i < n, print i2 . 
+PROBLEM 1: The provided code stub reads and integer, n, from STDIN. For all non-negative integers i < n, print i2 . 
 (link: https://www.hackerrank.com/challenges/python-loops/problem?isFullScreen=true)
 
 SOLUTION:
@@ -8,3 +9,26 @@ SOLUTION:
 n = int(input())
 for i in range(0,n):
   print(i**2)
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+PROBLEM 2: Given an integer, , perform the following conditional actions:
+(link:https://www.hackerrank.com/challenges/py-if-else/problem?isFullScreen=true)
+If  is odd, print Weird
+If  is even and in the inclusive range of 2 to 5 , print Not Weird
+If  is even and in the inclusive range of 6 to 20 , print Weird
+If  is even and greater than 20 , print Not Weird
+
+SOLUTION:
+
+if __name__ == '__main__':
+    n = int(input())
+    if n%2 != 0:
+        print("Weird")
+    elif n % 2 ==0 and n > 2 and n <=5:
+        print("Not Weird")
+    elif n % 2 == 0 and n > 6 and n <=20:
+        print("Weird")
+    else:
+        print("Not Weird")
