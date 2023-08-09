@@ -1,1 +1,10 @@
+DAY 1 
 
+PROBLEM: The provided code stub reads and integer, n, from STDIN. For all non-negative integers i < n, print i2 . 
+(link: https://www.hackerrank.com/challenges/python-loops/problem?isFullScreen=true)
+
+SOLUTION:
+
+n = int(input())
+for i in range(0,n):
+  print(i**2)
